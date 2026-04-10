@@ -1,0 +1,25 @@
+Title: AI Document Ingestion + Reasoning System
+
+This solution treats document ingestion as a multi-resolution knowledge compression problem.
+
+Part 1:
+A sliding window approach (2500 characters with overlap) is used to preserve context.
+Each chunk is transformed into a 4-layer knowledge pyramid:
+Raw Text → Summary → Category → Keywords
+
+This enables hierarchical abstraction and improves retrieval robustness.
+Queries are matched across all layers using semantic similarity.
+
+Part 2:
+The GSM8K dataset is used with 3000 training and 1000 test samples.
+A lightweight model is fine-tuned using LoRA for efficiency.
+Training follows instruction tuning (question-answer format).
+
+Key Decisions:
+- Character-based chunking for simplicity
+- Pyramid structure for better retrieval
+- LoRA for low compute cost
+- Modular pipeline for scalability
+
+Conclusion:
+The system demonstrates structured thinking, efficient design, and scalable AI architecture.
