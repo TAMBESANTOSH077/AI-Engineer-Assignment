@@ -14,10 +14,6 @@ Create/activate a Python environment (recommended) then install dependencies.
 ```bash
 pip install -r requirements.txt
 ```
-
-
-
-
 ### Manual install (alternative)
 
 ```bash
